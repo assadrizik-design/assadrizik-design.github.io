@@ -148,7 +148,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen tetris-bg text-white flex flex-col font-sans select-none overflow-hidden touch-none" dir="ltr">
+    <div className="h-full flex-1 tetris-bg text-white flex flex-col font-sans select-none overflow-hidden touch-none" dir="ltr">
       
       {/* Header */}
       <header className="p-4 flex justify-between items-center bg-black/30 backdrop-blur-md relative z-10">

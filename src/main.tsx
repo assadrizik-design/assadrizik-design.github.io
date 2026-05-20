@@ -30,7 +30,7 @@ function RootLayout() {
       </nav>
 
       {/* Main Content Render */}
-      <div className="flex-1 flex flex-col relative w-full overflow-hidden">
+      <div className="flex-1 flex flex-col relative w-full overflow-y-auto overflow-x-hidden">
          {renderPage()}
       </div>
     </div>

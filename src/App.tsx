@@ -148,7 +148,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="h-full flex-1 tetris-bg text-white flex flex-col font-sans select-none overflow-hidden touch-none" dir="ltr">
+    <div className="min-h-full flex-1 tetris-bg text-white flex flex-col font-sans select-none" dir="ltr">
       
       {/* Header */}
       <header className="p-4 flex justify-between items-center bg-black/30 backdrop-blur-md relative z-10">
@@ -178,7 +178,7 @@ export default function App() {
 
       {/* Main Content */}
       <main 
-        className="flex-1 flex flex-col lg:flex-row items-center lg:items-stretch justify-center p-2 sm:p-4 gap-4 sm:gap-8 max-w-7xl mx-auto w-full min-h-0 overflow-hidden"
+        className="flex-1 flex flex-col lg:flex-row items-center lg:items-stretch justify-center p-2 sm:p-4 gap-4 sm:gap-8 max-w-7xl mx-auto w-full min-h-[70vh] lg:min-h-[85vh] overflow-hidden touch-none"
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
@@ -432,7 +432,7 @@ export default function App() {
       </main>
 
       {/* Bottom Banner Ad Space */}
-      <div className="w-full bg-white/5 border-t border-white/10 p-2 flex justify-center items-center backdrop-blur-md z-20">
+      <div className="w-full bg-white/5 border-t border-b border-white/10 p-2 flex justify-center items-center backdrop-blur-md z-20 shrink-0">
         <div className="w-full max-w-[320px] sm:max-w-[728px] min-h-[50px] sm:min-h-[90px] bg-black/40 rounded border border-white/10 flex items-center justify-center relative overflow-hidden group">
           {/* Default Placeholder when ad is not configured (You will replace this when you get your AdSense credentials) */}
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-[100%] group-hover:animate-shimmer"></div>
@@ -454,6 +454,59 @@ export default function App() {
                data-full-width-responsive="true"></ins>
         </div>
       </div>
+
+      {/* SEO Article Section (Critical for AdSense Approval) */}
+      <section className="max-w-4xl mx-auto p-6 sm:p-12 text-gray-300 leading-relaxed font-sans pb-20">
+        <h2 className="text-3xl font-bold text-cyan-400 mb-6">Play ChromaFall: The Ultimate Neon Puzzle Game</h2>
+        
+        <p className="mb-6">
+          Welcome to the exciting world of <strong>ChromaFall</strong>, a fast-paced, brain-teasing block puzzle experience designed for gamers of all skill levels. If you enjoy spatial challenges, retro arcade classics, and bright neon aesthetics, this free-to-play browser game will test your reflexes and analytical skills like never before. 
+        </p>
+
+        <h3 className="text-2xl font-semibold text-blue-300 mb-4 mt-8">Game Rules and Mechanics</h3>
+        <p className="mb-4">
+          The concept of ChromaFall is simple to understand but incredibly challenging to master. Colored blocks (called tetrominoes) fall from the top of the grid. Your primary goal is to guide these blocks, rotate them, and lock them into place at the bottom of the screen. 
+        </p>
+        <p className="mb-4">
+          When you successfully form a solid horizontal line entirely filled with blocks, that line clears! Clearing lines awards you points. If you let the blocks stack up so high that they touch the top of the grid, the game ends. Maximize your score by clearing multiple lines simultaneously and keeping your play area flat.
+        </p>
+
+        <h3 className="text-2xl font-semibold text-blue-300 mb-4 mt-8">Controls Guide</h3>
+        <div className="bg-white/5 border border-white/10 rounded-xl p-6 mb-6">
+          <ul className="list-disc list-inside space-y-3 ml-2">
+            <li><strong>Desktop/PC:</strong> Use the Left and Right Arrow keys (or A and D) to shift the falling piece. Press the Up Arrow or Spacebar to rotate the block 90 degrees. Press the Down Arrow (or S) to fast-drop the piece.</li>
+            <li><strong>Mobile/Tablet:</strong> ChromaFall features full touch support! Swipe left and right to move. Tap anywhere on the screen to rotate the piece. Swipe down rapidly to drop the piece into place.</li>
+          </ul>
+        </div>
+
+        <h3 className="text-2xl font-semibold text-blue-300 mb-4 mt-8">Progression and Levels</h3>
+        <p className="mb-4">
+          Unlike static puzzles, ChromaFall evolves as you play. The game features 10 distinct difficulty levels. As you clear lines and increase your score, you will advance to higher levels. With each level up, the falling speed of the blocks increases, requiring much faster mental processing and reaction times. Additionally, higher levels expand the grid, giving you more space but requiring far more blocks to complete a single line!
+        </p>
+
+        <h3 className="text-2xl font-semibold text-blue-300 mb-4 mt-10">Frequently Asked Questions (FAQ)</h3>
+        
+        <div className="space-y-6 mt-4">
+          <div className="bg-white/5 border border-white/10 p-5 rounded-lg">
+            <h4 className="text-xl font-bold text-cyan-200 mb-2">Do I need to download anything to play ChromaFall?</h4>
+            <p className="text-gray-300">No! ChromaFall is a 100% browser-based web application. There are no downloads, no installations, and no plugins required. Simply open the webpage on your PC or mobile phone and start playing instantly.</p>
+          </div>
+          
+          <div className="bg-white/5 border border-white/10 p-5 rounded-lg">
+            <h4 className="text-xl font-bold text-cyan-200 mb-2">Is the game free to play?</h4>
+            <p className="text-gray-300">Yes, the game is entirely free to play. We sustain server and development costs through non-intrusive advertisements shown thoughtfully around the game area.</p>
+          </div>
+          
+          <div className="bg-white/5 border border-white/10 p-5 rounded-lg">
+            <h4 className="text-xl font-bold text-cyan-200 mb-2">Why does the grid change size?</h4>
+            <p className="text-gray-300">This is a unique mechanic to ChromaFall. To balance the exceptionally fast block drop rates in higher levels (Levels 5 through 10), the grid expands. This challenges the player to manage a much wider board, making the puzzle strategy significantly different from standard generic block puzzles.</p>
+          </div>
+        </div>
+        
+        <p className="mt-12 pt-6 border-t border-white/10 text-center text-sm text-gray-500">
+          ChromaFall is free to play directly in your web browser. No downloads or installations required. Enjoy the puzzle, and aim for the high score!
+        </p>
+      </section>
     </div>
   );
 }
